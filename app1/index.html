@@ -16,7 +16,9 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     </head>
 
     <body>
@@ -99,7 +101,7 @@
         <a
             name=""
             id=""
-            class="btn btn-primary mb-3"
+            class="btn btn-success mb-3"
             href="#"
             role="button"
             >INTRODUZCA NOMBRE <br> DE ESTUDIANTE</a
@@ -110,7 +112,7 @@
             class="table-responsive-lg "
         >
             <table
-                class="table table-striped table-hover table-borderless table-primary align-middle text-center"
+                class="table table-striped table-hover table-borderless table-primary align-middle text-center "
             >
                 <thead class="table-light">
                     <caption class="text-center">
@@ -126,8 +128,8 @@
                     <tr
                         class="table-primary"
                     >
-                        <td scope="row"><i class="bi bi-pencil-square"></i>MATEMÁTICAS</td>
-                        <td></td>
+                        <td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;MATEMÁTICAS</td>
+                        <td id="demo"></td>
                         <td>
                             <a
                                 name=""
@@ -135,6 +137,7 @@
                                 class="btn btn-primary"
                                 href="#"
                                 role="button"
+                                onclick="uno()"
                                 >Calcular</a
                             >
                             
@@ -144,13 +147,14 @@
                         class="table-primary"
                     >
                         <td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;QUÍMICA</td>
-                        <td></td>
+                        <td id="demo2"></td>
                         <td><a
                             name=""
                             id=""
                             class="btn btn-primary"
                             href="#"
                             role="button"
+                            onclick="dos()"
                             >Calcular</a
                         >
                         </td>
@@ -159,13 +163,14 @@
                     class="table-primary"
                 >
                     <td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;FÍSICA</td>
-                    <td></td>
+                    <td id="demo3"></td>
                     <td><a
                         name=""
                         id=""
                         class="btn btn-primary"
                         href="#"
                         role="button"
+                        onclick="tres()"
                         >Calcular</a
                     >
                     </td>
@@ -174,13 +179,14 @@
                 class="table-primary"
             >
                 <td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;INFORMÁTICA</td>
-                <td></td>
+                <td id="demo4"></td>
                 <td><a
                     name=""
                     id=""
                     class="btn btn-primary"
                     href="#"
                     role="button"
+                    onclick="cuatro()"
                     >Calcular</a
                 >
                 </td>
@@ -189,13 +195,14 @@
             class="table-primary"
         >
             <td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;BIOLOGÍA</td>
-            <td></td>
+            <td id="demo5"></td>
             <td><a
                 name=""
                 id=""
                 class="btn btn-primary"
                 href="#"
                 role="button"
+                onclick="cinco()"
                 >Calcular</a
             >
             </td>
@@ -203,14 +210,15 @@
         <tr
         class="table-primary"
     >
-        <td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;INGLES</td>
-        <td></td>
+        <td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;INGLÉS</td>
+        <td id="demo6"></td>
         <td><a
             name=""
             id=""
             class="btn btn-primary"
             href="#"
             role="button"
+            onclick="seis()"
             >Calcular</a
         >
         </td>
@@ -227,16 +235,17 @@
                     <a
                     name=""
                     id=""
-                    class="btn btn-primary"
+                    class="btn btn-danger"
                     href="#"
                     role="button"
-                    ><i class="bi bi-printer-fill"></i>&nbsp; DESCARGAR E IMPRIMIR</a>
-                </div>
+                    onclick="window.print()"
+                    ><i class="bi bi-printer-fill"></i>&nbsp; DESCARGAR O IMPRIMIR</a>
+                </div><br><br>
 
 
 
 
-
+    <!----------------------------------script JS------------------------->
         <script src="js/js.js"></script>
         <!-- Bootstrap JavaScript Libraries -->
         <script
