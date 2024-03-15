@@ -3,12 +3,12 @@ function uno () {
     nota1 = parseFloat(prompt('ingrese la primera nota'));
     nota2 = parseFloat(prompt('ingrese la segunda nota'));
     nota3 = parseFloat(prompt('ingrese la tercera nota'));
-    resultado = (nota1 + nota2 + nota3) /3; 
+    resultado = parseFloat((nota1 + nota2 + nota3) /3).toFixed(1); 
 
     if (resultado >= 5) {
-        document.getElementById('demo').innerHTML="aprobó la asignatura";
+        document.getElementById('demo').innerHTML=resultado ;
     } else {
-        document.getElementById('demo').innerHTML="suspendió la asignatura";
+        document.getElementById('demo').innerHTML=resultado ;
     }
 }
 
@@ -17,12 +17,12 @@ function dos () {
     nota1 = parseFloat(prompt('ingrese la primera nota'));
     nota2 = parseFloat(prompt('ingrese la segunda nota'));
     nota3 = parseFloat(prompt('ingrese la tercera nota'));
-    resultado = (nota1 + nota2 + nota3) /3; 
+    resultado = parseFloat((nota1 + nota2 + nota3) /3).toFixed(1); 
 
     if (resultado >= 5) {
-        document.getElementById('demo2').innerHTML="aprobó la asignatura";
+        document.getElementById('demo2').innerHTML=resultado ;
     } else {
-        document.getElementById('demo2').innerHTML="suspendió la asignatura";
+        document.getElementById('demo2').innerHTML=resultado ;
     }
 }
 
@@ -31,12 +31,12 @@ function tres () {
     nota1 = parseFloat(prompt('ingrese la primera nota'));
     nota2 = parseFloat(prompt('ingrese la segunda nota'));
     nota3 = parseFloat(prompt('ingrese la tercera nota'));
-    resultado = (nota1 + nota2 + nota3) /3; 
+    resultado = parseFloat((nota1 + nota2 + nota3) /3).toFixed(1); 
 
     if (resultado >= 5) {
-        document.getElementById('demo3').innerHTML="aprobó la asignatura";
+        document.getElementById('demo3').innerHTML=resultado ;
     } else {
-        document.getElementById('demo3').innerHTML="suspendió la asignatura";
+        document.getElementById('demo3').innerHTML=resultado ;
     }
 }
 
@@ -45,12 +45,12 @@ function cuatro () {
     nota1 = parseFloat(prompt('ingrese la primera nota'));
     nota2 = parseFloat(prompt('ingrese la segunda nota'));
     nota3 = parseFloat(prompt('ingrese la tercera nota'));
-    resultado = (nota1 + nota2 + nota3) /3; 
+    resultado = parseFloat((nota1 + nota2 + nota3) /3).toFixed(1); 
 
     if (resultado >= 5) {
-        document.getElementById('demo4').innerHTML="aprobó la asignatura";
+        document.getElementById('demo4').innerHTML=resultado ;
     } else {
-        document.getElementById('demo4').innerHTML="suspendió la asignatura";
+        document.getElementById('demo4').innerHTML=resultado ;
     }
 }
 
@@ -59,12 +59,12 @@ function cinco () {
     nota1 = parseFloat(prompt('ingrese la primera nota'));
     nota2 = parseFloat(prompt('ingrese la segunda nota'));
     nota3 = parseFloat(prompt('ingrese la tercera nota'));
-    resultado = (nota1 + nota2 + nota3) /3; 
+    resultado = parseFloat((nota1 + nota2 + nota3) /3).toFixed(1); 
 
     if (resultado >= 5) {
-        document.getElementById('demo5').innerHTML="aprobó la asignatura";
+        document.getElementById('demo5').innerHTML=resultado ;
     } else {
-        document.getElementById('demo5').innerHTML="suspendió la asignatura";
+        document.getElementById('demo5').innerHTML=resultado ;
     }
 }
 
@@ -73,12 +73,30 @@ function seis () {
     nota1 = parseFloat(prompt('ingrese la primera nota'));
     nota2 = parseFloat(prompt('ingrese la segunda nota'));
     nota3 = parseFloat(prompt('ingrese la tercera nota'));
-    resultado = (nota1 + nota2 + nota3) /3; 
+    resultado = parseFloat((nota1 + nota2 + nota3) /3).toFixed(1); 
 
     if (resultado >= 5) {
-        document.getElementById('demo6').innerHTML="aprobó la asignatura";
+        document.getElementById('demo6').innerHTML=resultado ;
     } else {
-        document.getElementById('demo6').innerHTML="suspendió la asignatura";
+        document.getElementById('demo6').innerHTML=resultado ;
+    }
+}
+
+function total() {
+    let matematicas, quimica, fisica, informatica, biologia, ingles;
+    matematicas = document.getElementById('demo').innerHTML;
+    quimica = document.getElementById('demo2').innerHTML;
+    fisica = document.getElementById('demo3').innerHTML;
+    informatica = document.getElementById('demo4').innerHTML;
+    biologia = document.getElementById('demo5').innerHTML;
+    ingles = document.getElementById('demo6').innerHTML;
+
+    let media = parseFloat((matematicas + quimica + fisica + informatica + biologia + ingles)/6).toFixed(1);
+
+    if (media >= 5) {
+        alert('aprobaste');
+    } else {
+        alert('suspendiste');
     }
 }
 
@@ -100,8 +118,6 @@ ekiz.addEventListener('click', ()=>{
     console.log('nya');
 })
 //Math.trunc
-
-
 
 
 
