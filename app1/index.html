@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Constancia de notas</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -18,6 +18,7 @@
         />
       
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/styles.css">
 
     </head>
 
@@ -95,18 +96,21 @@
         <div
             class="container mt-2"
         >
-        
+        <div align="center">
         <img  src="img/escudoespañol.png" alt="" width="100px">
-        <h1 class="text-center">CONSTANCIA DE NOTAS</h1>
+    </div>
+        <h1 class="text-center mt-2">CONSTANCIA DE NOTAS</h1>
+        
         <a
             name=""
             id=""
-            class="btn btn-success mb-3"
+            class=" btn btn-dark mb-2 mt-5"
             href="#"
             role="button"
+            onclick="estudiante()"
             >INTRODUZCA NOMBRE <br> DE ESTUDIANTE</a
         >
-        
+        <p id="estudiante"></p>
 
         <div
             class="table-responsive-lg "

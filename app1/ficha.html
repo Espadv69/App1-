@@ -16,18 +16,185 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         
     </head>
 
     <body>
        
+        
+    <nav
+        class="navbar navbar-expand-sm navbar-light bg-dark"
+    >
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Navbar</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#" aria-current="page"
+                            >Home
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle text-white"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Dropdown</a
+                        >
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId"
+                        >
+                            <a class="dropdown-item" href="#"
+                                >Action 1</a
+                            >
+                            <a class="dropdown-item" href="#"
+                                >Action 2</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input
+                        class="form-control me-sm-2"
+                        type="text"
+                        placeholder="Search"
+                    />
+                    <button
+                        class="btn btn-outline-success my-2 my-sm-0"
+                        type="submit"
+                    >
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
+    <div class="aviso">
+        <p class="parrafo"><i class="bi bi-award-fill"></i><strong> Aviso importante,</strong> leer nuestra <a href="#"> política de privacidad </a></p>
+    <span class="ekiz" onclick="closed()">X</span>
+    </div>
 
+<div align="center">
+    <img src="img/escudoespañol.png" alt="" width="100px">
+</div>
 
+    <h2>FORMULARIO</h2>
 
+    <div id="row">
+        <h3>Nombre</h3>
+        <h3>Apellido</h3>
+    </div>
 
+    <label id="label1" for="">
+        <input type="text" placeholder="Nombre" >
+        <input type="text" placeholder="Apellido">
+    </label>
 
+    <div id="row2">
+        <h3>Correo electrónico</h3>
+        <h3>Número de telefono</h3>
+    </div>
 
+    <label id="label1" for="">
+        <input type= "text" placeholder="Correo electrónico">
+        <input type= "text" placeholder="Número de telefono">
+    </label>
+
+    <div id="row3">
+        <h3>Dirección</h3>
+        <h3>Código postal</h3>
+    </div>
+
+    <label id="label1" for="">
+        <input type= "text" placeholder="Dirección">
+        <input type= "text" placeholder="Código postal">
+    </label>
+
+    <!-- Modal trigger button -->
+    <div class="divCenter">
+    <button
+        type="button"
+        class="btn"
+        data-bs-toggle="modal"
+        data-bs-target="#modalId"
+    >
+        Enviar
+    </button>
+</div><br>
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div
+        class="modal fade"
+        id="modalId"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                        GRACIAS POR REGISTRARTE
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div align="center" class="modal-body"><img src="img/escudoespañol.png" alt="" width="100px"></div>
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >
+                        Atrás
+                    </button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+        const myModal = new bootstrap.Modal(
+            document.getElementById("modalId"),
+            options,
+        );
+    </script>
+    
 
 
 
@@ -49,5 +216,7 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+
+        
     </body>
 </html>
