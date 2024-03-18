@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+
+        <nav
+        class="navbar navbar-expand-sm navbar-light bg-dark"
+    >
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Navbar</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#" aria-current="page"
+                            >Home
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a
+                            class="nav-link dropdown-toggle text-white"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Dropdown</a
+                        >
+                        <div
+                            class="dropdown-menu "
+                            aria-labelledby="dropdownId"
+                        >
+                            <a class="dropdown-item bg-dark text-white" href="ficha.html"
+                                >Ficha de</a
+                            >
+                            <a class="dropdown-item bg-dark text-white" href="#"
+                                >Action 2</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input
+                        class="form-control me-sm-2 text-dark"
+                        type="text"
+                        placeholder="Search"
+                    />
+                    <button
+                        class="btn btn-outline-danger my-2 my-sm-0"
+                        type="submit"
+                    >
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div
+    class="container mt-2"
+>
+<div align="center">
+<img  src="img/escudoespañol.png" alt="" width="100px">
+</div>
+<h1 class="text-center mt-2">CONSTANCIA DE NOTAS</h1>
+
+<a
+    name=""
+    id=""
+    class=" btn btn-dark mb-2 mt-5"
+    href="#"
+    role="button"
+    onclick="estudiante()"
+    >INTRODUZCA NOMBRE <br> DE ESTUDIANTE</a
+>
+<p id="estudiante"></p>
+
+<div
+    class="table-responsive-lg "
+>
+    <table
+        class="table table-striped table-hover table-borderless table-primary align-middle text-center "
+    >
+        <thead class="table-light">
+            <caption class="text-center">
+             notas everybody go to the club
+            </caption>
+            <tr>
+                <th>ASIGNATURA</th>
+                <th>PROMEDIO DE NOTAS</th>
+                <th>CALCULAR SU NOTA</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <tr
+                class="table-primary"
+            >
+                <td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;MATEMÁTICAS</td>
+                <td id="demo7"></td>
+                <td>
+                    <a
+                        name=""
+                        id=""
+                        class="btn btn-primary"
+                        href="#"
+                        role="button"
+                        onclick="uno1()"
+                        >Calcular</a
+                    >
+                    
+                </td>
+            </tr>
+            <tr
+                class="table-primary"
+            >
+                <td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;QUÍMICA</td>
+                <td id="demo8"></td>
+                <td><a
+                    name=""
+                    id=""
+                    class="btn btn-primary"
+                    href="#"
+                    role="button"
+                    onclick="dos2()"
+                    >Calcular</a
+                >
+                </td>
+            </tr>
+            <tr
+            class="table-primary"
+        >
+            <td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;FÍSICA</td>
+            <td id="demo9"></td>
+            <td><a
+                name=""
+                id=""
+                class="btn btn-primary"
+                href="#"
+                role="button"
+                onclick="tres3()"
+                >Calcular</a
+            >
+            </td>
+        </tr>
+        <tr
+        class="table-primary"
+    >
+        <td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;INFORMÁTICA</td>
+        <td id="demo10"></td>
+        <td><a
+            name=""
+            id=""
+            class="btn btn-primary"
+            href="#"
+            role="button"
+            onclick="cuatro4()"
+            >Calcular</a
+        >
+        </td>
+    </tr>
+    <tr
+    class="table-primary"
+>
+    <td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;BIOLOGÍA</td>
+    <td id="demo11"></td>
+    <td><a
+        name=""
+        id=""
+        class="btn btn-primary"
+        href="#"
+        role="button"
+        onclick="cinco5()"
+        >Calcular</a
+    >
+    </td>
+</tr>
+<tr
+class="table-primary"
+>
+<td scope="row"><i class="bi bi-pencil-square"></i>&nbsp;INGLÉS</td>
+<td id="demo12"></td>
+<td><a
+    name=""
+    id=""
+    class="btn btn-primary"
+    href="#"
+    role="button"
+    onclick="seis6()"
+    >Calcular</a
+>
+</td>
+</tr>
+<a href="#" onclick="total()">media</a>
+        </tbody>
+        <tfoot>
+            
+        </tfoot>
+    </table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+        <script src="js/js.js"></script>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

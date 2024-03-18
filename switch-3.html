@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch prueba 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <header>
+
+            <div align="center">
+            <img src="school.png" alt="" width="500px">
+            </div>
+
+        </header>
+    
+        <div class="father">
+            <div class="child">
+                <h2>SU TRADUCTOR</h2>
+                <div class="pito"></div>
+                <div class="child2">
+                    
+                <button type="button" class="pito2">Translate</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <script>
+
+        function translate(){
+
+            let valor;
+            let poner = document.querySelector('.pito');
+            poner.style= "display: block;"
+            valor = parseInt(prompt('ingrese un numero entero del 1 - 5'));
+            switch(valor) {
+
+            case 1:
+                poner.innerHTML = "One";
+                break;
+            case 2:
+                poner.innerHTML = "Two";
+                break;
+            case 3:
+                poner.innerHTML = "Three";
+                break;
+            case 4:
+                poner.innerHTML = "Four";
+                break;
+            case 5:
+                poner.innerHTML = "Five";
+                break;
+            case 6:
+                poner.innerHTML = "Six";
+                break;
+            case 7:
+                poner.innerHTML = "Seven";
+                break;
+            case 8:
+                poner.innerHTML = "Eight";
+                break;
+            case 9:
+                poner.innerHTML = "Nine";
+                break;
+            case 10:
+                poner.innerHTML = "Ten";
+                break;
+            default:
+                poner.innerHTML = "I don't know <br><br> You don't know";
+                break;
+            }
+            
+        }
+
+        let button = document.querySelector('.pito2');
+
+        button.addEventListener('click', translate);
+
+
+    </script>
+</body>
+</html>

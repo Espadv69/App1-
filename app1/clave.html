@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clave</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+    <form name="login">
+        <table>
+            <tr>
+                <th><h2>Usuario</h2></th>
+                <td>
+                    <span class="cnt">
+                        <input type="text" name="user" class="input" value="">
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><h2>Clave</h2></th>
+                <td>
+                    <span class="cnt">
+                        <input type="password" name="password" class="input" value="">
+                    </span>
+                </td>
+            
+            <td>
+                <span class="cnt">
+                    <input type="button" value="Entrar" target="_parent" onclick="Login()" class="boton">
+                </span>
+            </td>
+        </tr>
+            <tr>
+                <th scope="row">
+                    <input type="reset" name="borrar" id="borrar" value="reset" class="btn">
+                </th>
+            </tr>
+        </table>
+    </form>
+
+    <script language="JavaScript">
+
+        function Login() {
+            let done = 0;
+            let user = document.login.user.value;
+            let password = document.login.password.value;
+            if (user == "aitor" && password == "1234") {
+                window.location = "index.html";
+            }
+        };
+
+        
+    </script>
+
+    <script language="JavaScript">
+
+        document.oncontextmenu = function() {
+            return false
+        };
+
+    </script>
+
+
+
+</body>
+</html>
