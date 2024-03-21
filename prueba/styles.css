@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    background-image: url(xiao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn {
+    position: absolute;
+    left: 28rem;
+    top: 15rem;
+    width: 15vw;
+    padding: 0.7rem;
+    background-color: rgba(255, 0, 0, 0.452);
+    color: white;
+    transition: all ease 0.4s;
+}
+
+.btn:hover {
+    background-color: rgba(34, 0, 54, 0.699);
+    color: white;
+}

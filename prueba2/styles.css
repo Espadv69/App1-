@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: orangered;
+}
+#container {
+    opacity: 0.3;
+}
+
+.emergente {
+    border: 1px solid black;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    background-color: whitesmoke;
+    left: 30vw;
+    top: 180px;
+    border-radius: 0.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.emergente h4 {
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.botonMenor {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    position: fixed;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    right: 325px;
+    transition: all ease 0.4s;
+}
+.botonMenor:hover {
+    color: white;
+    background-color: rgb(255, 115, 0);
+}
+
+.botonMayor {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 18px;
+    position: fixed;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    left: 315px;
+    transition: all ease 0.4s;
+}
+.botonMayor:hover {
+    color: white;
+    background-color: black;
+}
