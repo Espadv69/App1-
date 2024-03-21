@@ -1,31 +1,31 @@
-let valores = 0;
+// let valores = 0;
 
-let valoresNegativos = 0;
-let valoresPositivos = 0;
-let multiplos = 0;
-let pares = 0;
+// let valoresNegativos = 0;
+// let valoresPositivos = 0;
+// let multiplos = 0;
+// let pares = 0;
 
-function press() {
+// function press() {
 
-for(let i = 1; i <= 10; i++) {
-        valores = parseInt(prompt('ingrese los valores'));
-        if(valores < 0) {
-        valoresNegativos = valoresNegativos + 1;
-        } else if(valores > 0){
-        valoresPositivos = valoresPositivos + 1;
-        } if(valores % 15 == 0) {
-        multiplos = multiplos + 1;
-        } if(valores > 0 && valores %2 == 0) {
-        pares = pares + valores;
-        }
-    }
+// for(let i = 1; i <= 10; i++) {
+//         valores = parseInt(prompt('ingrese los valores'));
+//         if(valores < 0) {
+//         valoresNegativos = valoresNegativos + 1;
+//         } else if(valores > 0){
+//         valoresPositivos = valoresPositivos + 1;
+//         } if(valores % 15 == 0) {
+//         multiplos = multiplos + 1;
+//         } if(valores > 0 && valores %2 == 0) {
+//         pares = pares + valores;
+//         }
+//     }
 
-    let div = document.querySelector('.pito');
-    div.innerHTML = `<h2>La cantidad de números negativos añadidos es: ${valoresNegativos}</h2><br><h2>La cantidad de números positivos añadidos es: ${valoresPositivos}</h2><br><h2>Los múltiplos de 15 son: ${multiplos}</h2><br><h2>La suma de los pares es: ${pares}</h2>`
-}
+//     let div = document.querySelector('.pito');
+//     div.innerHTML = `<h2>La cantidad de números negativos añadidos es: ${valoresNegativos}</h2><br><h2>La cantidad de números positivos añadidos es: ${valoresPositivos}</h2><br><h2>Los múltiplos de 15 son: ${multiplos}</h2><br><h2>La suma de los pares es: ${pares}</h2>`
+// }
 
-let button = document.querySelector('.pito2');
-button.addEventListener('click', press);
+// let button = document.querySelector('.pito2');
+// button.addEventListener('click', press);
         
 
 
@@ -33,13 +33,6 @@ button.addEventListener('click', press);
 // console.log("positivos: " + valoresPositivos);
 // console.log("multiplos de 15: " +multiplos);
 // console.log("suma de pares: " + pares);
-
-
-
-
-
-
-
 
 
 
